@@ -15,40 +15,40 @@ This a very important bluring method.<br>
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install cv2 and numpy.
 
 
-```bash
+```cmd
 pip install cv2
 pip install numpy
 ```
 
 ## Import
 Use [import](https://www.w3schools.com/python/ref_keyword_import.asp) keyword to import modules.
-```python
+```cmd
 import cv2
 import numpy as np
 ```
 
 ## Reading image from file
 
-```python
+```cmd
 img = cv2.imread("cat.png")
 ```
 
 
 ## Gussian blur effect
  
-```python
+```cmd
 gauss = cv2.GaussianBlur(img,ksize=(15,15),sigmaX=0,sigmaY=0)
 ```
 
 ## Completion message
 
-```python
+```cmd
 print('Gaussian Blur Applied.')
 ```
 
 ## Comparing original vs grayscale
 
-```python
+```cmd
 cv2.imshow('original',img)
 cv2.imshow('gauss',gauss)
 cv2.waitKey(0)
